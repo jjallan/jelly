@@ -2043,7 +2043,7 @@ atoms = {
 	),
 	'ØC': attrdict(
 		arity = 0,
-		call = lambda: [c for i, c in enumerate(str_upper) if i not in (0,4,8,14,20)] + [c for i, c in enumerate(str_lower) if i not in (0,4,8,14,20)]
+		call = lambda: list('BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz')
 	),
 	'ØD': attrdict(
 		arity = 0,
@@ -2079,7 +2079,7 @@ atoms = {
 	),
 	'Øc': attrdict(
 		arity = 0,
-		call = lambda: [str_upper[i] for i in (0,4,8,14,20)] + [str_lower[i] for i in (0,4,8,14,20)]
+		call = lambda: list('AEIOUaeiou')
 	),
 	'Øe': attrdict(
 		arity = 0,
