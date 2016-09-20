@@ -2041,6 +2041,10 @@ atoms = {
 		arity = 0,
 		call = lambda: list(str_digit + str_upper + str_lower)
 	),
+	'ØC': attrdict(
+		arity = 0,
+		call = lambda: [c for i, c in enumerate(str_upper) if i not in (0,4,8,14,20)] + [c for i, c in enumerate(str_lower) if i not in (0,4,8,14,20)]
+	),
 	'ØD': attrdict(
 		arity = 0,
 		call = lambda: list(str_digit)
@@ -2072,6 +2076,10 @@ atoms = {
 	'Øb': attrdict(
 		arity = 0,
 		call = lambda: list(str_upper + str_lower + str_digit + '+/')
+	),
+	'Øc': attrdict(
+		arity = 0,
+		call = lambda: [str_upper[i] for i in (0,4,8,14,20)] + [str_lower[i] for i in (0,4,8,14,20)]
 	),
 	'Øe': attrdict(
 		arity = 0,
