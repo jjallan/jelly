@@ -1734,7 +1734,7 @@ atoms = {
 	'Æḟ': attrdict(
 		arity = 1,
 		ldepth = 1,
-		call = lambda z: from_factorial_base
+		call = from_factorial_base
 	),
 	'Æe': attrdict(
 		arity = 1,
@@ -1769,7 +1769,7 @@ atoms = {
 	'ÆṖ': attrdict(
 		arity = 1,
 		ldepth = 0,
-		call = lambda z: to_primorial_base
+		call = to_primorial_base
 	),
 	'Æp': attrdict(
 		arity = 1,
@@ -1779,7 +1779,7 @@ atoms = {
 	'Æṗ': attrdict(
 		arity = 1,
 		ldepth = 1,
-		call = lambda z: from_primorial_base
+		call = from_primorial_base
 	)
 	'ÆR': attrdict(
 		arity = 1,
