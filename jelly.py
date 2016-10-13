@@ -1780,7 +1780,7 @@ atoms = {
 		arity = 1,
 		ldepth = 1,
 		call = from_primorial_base
-	)
+	),
 	'ÆR': attrdict(
 		arity = 1,
 		ldepth = 0,
