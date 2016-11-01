@@ -1726,16 +1726,6 @@ atoms = {
 		ldepth = 0,
 		call = lambda z: [[x, y] for x, y in sorted(sympy.ntheory.factor_.factorint(z).items())]
 	),
-	'ÆḞ': attrdict(
-		arity = 1,
-		ldepth = 0,
-		call = to_factorial_base
-	),
-	'Æḟ': attrdict(
-		arity = 1,
-		ldepth = 1,
-		call = from_factorial_base
-	),
 	'Æe': attrdict(
 		arity = 1,
 		ldepth = 0,
@@ -1766,20 +1756,10 @@ atoms = {
 		ldepth = 0,
 		call = lambda z: int(sympy.primetest.isprime(z))
 	),
-	'ÆṖ': attrdict(
-		arity = 1,
-		ldepth = 0,
-		call = to_primorial_base
-	),
 	'Æp': attrdict(
 		arity = 1,
 		ldepth = 0,
 		call = sympy.ntheory.generate.prevprime
-	),
-	'Æṗ': attrdict(
-		arity = 1,
-		ldepth = 1,
-		call = from_primorial_base
 	),
 	'ÆR': attrdict(
 		arity = 1,
@@ -1850,6 +1830,16 @@ atoms = {
 		arity = 1,
 		ldepth = 0,
 		call = math.degrees
+	),
+	'Æ!': attrdict(
+		arity = 1,
+		ldepth = 0,
+		call = to_factorial_base
+	),
+	'Æ¡': attrdict(
+		arity = 1,
+		ldepth = 1,
+		call = from_factorial_base
 	),
 	'Œ!': attrdict(
 		arity = 1,
@@ -1947,6 +1937,16 @@ atoms = {
 		arity = 1,
 		ldepth = 1,
 		call = lambda z: to_case(z, upper = True)
+	),
+	'Œ!': attrdict(
+		arity = 1,
+		ldepth = 0,
+		call = to_primorial_base
+	),
+	'Œ¡': attrdict(
+		arity = 1,
+		ldepth = 1,
+		call = from_primorial_base
 	),
 	'æ.': attrdict(
 		arity = 2,
