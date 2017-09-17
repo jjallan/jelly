@@ -685,8 +685,8 @@ def parse_literal(literal_match):
 		if len(parsed) == 1:
 			parsed = parsed[0]
 	elif literal[0] == '⁽':
-		parsed = from_base([code_page.find(char) + 1 for char in literal[1:]], 250)
-		parsed += parsed > 31500 and -62850 or 750
+		parsed = from_base([code_page.find(char) + 1 for char in literal[1:]], 256)
+		parsed += parsed > 33124 and -65892 or 744
 	else:
 		parsed = eval('+ 1j *'.join([
 			repr(eval('* 10 **'.join(['-1' if part == '-' else (part + '5' if part[-1:] == '.' else part) or repr(2 * index + 1)
