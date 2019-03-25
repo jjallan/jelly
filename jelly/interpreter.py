@@ -924,6 +924,8 @@ def reduce(links, outmost_links, index, arity = 1):
 
 def reduce_simple(array, link, *init):
 	array = iterable(array)
+	if len(array) == 0 and len(init) == 0:
+		return []
 	return functools.reduce(lambda x, y: dyadic_link(link, (x, y)), array, *init)
 
 def reduce_cumulative(links, outmost_links, index):
